@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:robobunny="http://robobunny.com" >
+    
+    <CheckBoxPreference
+        android:title="@string/config_pref_start_boot"
+        android:key="SPStartBoot"
+        android:defaultValue="false"/>
+    
+    <PreferenceCategory android:title="@string/config_pref_category_gateway" >
+        
+        <EditTextPreference
+                android:title="@string/config_pref_gateway_ip"
+                android:key="SPGatewayIpAddress" />
+        <EditTextPreference
+                android:title="@string/config_pref_gateway_port"
+                android:key="SPGatewayPort"
+                android:inputType="number" />
+        
+	</PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/config_pref_category_mobile_objects" >
+
+        <CheckBoxPreference
+            android:title="@string/config_pref_auto_connect"
+            android:key="SPAutoConnectMO"
+            android:defaultValue="true"/>
+
+        <br.pucrio.inf.lac.mhub.helpers.SeekBarPreference
+            android:title="@string/config_pref_connect_signal"
+            android:key="SPSignalRangeMO"
+            android:max="0"
+            android:defaultValue="-90"
+            robobunny:min="-100"
+            robobunny:unitsLeft=""
+            robobunny:unitsRight="dBm" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/config_pref_category_services" >
+
+        <CheckBoxPreference
+            android:title="@string/config_pref_energy_manager"
+            android:key="SPEnergyManager"
+            android:defaultValue="false"/>
+
+        <CheckBoxPreference
+            android:title="@string/config_pref_mepa_service"
+            android:key="SPMEPAService"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:title="@string/config_pref_location_service"
+            android:key="SPLocationService"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:title="@string/config_pref_latitude"
+            android:key="SPLocationLatitude"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditTextPreference
+            android:title="@string/config_pref_longitude"
+            android:key="SPLocationLongitude"
+            android:inputType="numberDecimal|numberSigned" />
+
+    </PreferenceCategory>
+	
+    <PreferenceCategory android:title="@string/config_pref_category_msg" >
+        
+        <EditTextPreference
+                android:title="@string/config_pref_current"
+                android:key="SPCurrentMessagesInterval"
+                android:inputType="number" />
+        
+        <EditTextPreference
+                android:title="@string/config_pref_high"
+                android:key="SPMessagesIntervalHigh"
+                android:inputType="number" />
+        
+        <EditTextPreference
+                android:title="@string/config_pref_medium"
+                android:key="SPMessagesIntervalMedium"
+                android:inputType="number" />
+        
+        <EditTextPreference
+                android:title="@string/config_pref_low"
+                android:key="SPMessagesIntervalLow"
+                android:inputType="number" />
+        
+	</PreferenceCategory>
+	
+    <PreferenceCategory android:title="@string/config_pref_category_location" >
+
+        <EditTextPreference
+                android:title="@string/config_pref_current"
+                android:key="SPCurrentLocationInterval"
+                android:inputType="number" />
+        
+        <EditTextPreference
+                android:title="@string/config_pref_high"
+                android:key="SPLocationIntervalHigh"
+                android:inputType="number" />
+        
+        <EditTextPreference
+                android:title="@string/config_pref_medium"
+                android:key="SPLocationIntervalMedium"
+                android:inputType="number" />
+        
+        <EditTextPreference
+                android:title="@string/config_pref_low"
+                android:key="SPLocationIntervalLow"
+                android:inputType="number" />
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/config_pref_category_scan" >
+        
+        <EditTextPreference
+                android:title="@string/config_pref_current"
+                android:key="SPCurrentScanInterval"
+                android:inputType="number" />
+        
+        <EditTextPreference
+                android:title="@string/config_pref_high"
+                android:key="SPScanIntervalHigh"
+                android:inputType="number" />
+        
+        <EditTextPreference
+                android:title="@string/config_pref_medium"
+                android:key="SPScanIntervalMedium"
+                android:inputType="number" />
+        
+        <EditTextPreference
+                android:title="@string/config_pref_low"
+                android:key="SPScanIntervalLow"
+                android:inputType="number" />
+
+    </PreferenceCategory>
+    
+</PreferenceScreen>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mobile Hub</string>
+    <string name="service_name">S2PA</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="desc">desc</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Notification Messages -->
+    <string name="message.disconnecting">Disconnecting</string>
+    <string name="service_started">Running</string>
+
+    <!-- Navigation List -->
+    <string-array name="nav_options">
+        <item>Settings</item>
+        <item>Viewer</item>
+        <item>Events</item>
+    </string-array>
+
+    <!-- Menu -->
+    <string name="action_service_state">Service State</string>
+    <string name="action_clear_data">Clear Data</string>
+    <string name="message.confirm">Are you sure?</string>
+
+    <!-- Preferences Categories -->
+    <string name="config_pref_category_mobile_objects">Mobile Objects Parameters</string>
+    <string name="config_pref_category_gateway">Gateway Parameters</string>
+    <string name="config_pref_category_services">Services &amp; Managers Parameters</string>
+    <string name="config_pref_category_msg">Message Parameters (ms)</string>
+    <string name="config_pref_category_location">Location Parameters (ms)</string>
+    <string name="config_pref_category_scan">Scan Parameters (ms)</string>
+
+    <!-- Preferences Configurations -->
+    <string name="config_pref_start_boot">Start at Boot</string>
+    <string name="config_pref_evaluation">Evaluation</string>
+    <string name="config_pref_gateway_ip">IP</string>
+    <string name="config_pref_gateway_port">Port</string>
+    <string name="config_pref_energy_manager">Energy Manager</string>
+    <string name="config_pref_mepa_service">MEPA Service</string>
+    <string name="config_pref_location_service">Location Service</string>
+    <string name="config_pref_latitude">Latitude</string>
+    <string name="config_pref_longitude">Longitude</string>
+    <string name="config_pref_current">Interval [ CURRENT ]</string>
+    <string name="config_pref_high">Level HIGH</string>
+    <string name="config_pref_medium">Level MEDIUM</string>
+    <string name="config_pref_low"> Level LOW</string>
+    <string name="config_pref_auto_connect">Auto-Connect</string>
+    <string name="config_pref_connect_signal">Signal Allowed</string>
+
+    <!-- MHubViewer Texts -->
+    <string name="text_latitude">Latitude:</string>
+    <string name="text_longitude">Longitude:</string>
+    <string name="text_rssi">RSSI:</string>
+    <string name="text_default"> -- </string>
+
+    <!-- Activity Titles -->
+    <string name="title_activity_mhub_settings">Mobile Hub Settings</string>
+    <string name="title_fragment_mhub_viewer">Mobile Hub Viewer</string>
+    <string name="title_fragment_mhub_events">Mobile Hub Events</string>
+
+    <!-- ACRA -->
+    <string name="crash_toast_text">Ooooops ! I crashed, but a report has been sent to my developer to help fix the issue !</string>
+
+</resources>

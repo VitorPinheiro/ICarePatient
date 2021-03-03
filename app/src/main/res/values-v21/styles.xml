@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="AppTheme.Settings" parent="AppTheme.Base">
+        <item name="android:alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+    </style>
+
+</resources>

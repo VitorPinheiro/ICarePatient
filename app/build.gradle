@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "br.pucrio.inf.lac.mhub"
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.2"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    dexOptions {
+        jumboMode true
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile files('libs/BioHarnessBT.jar')
+    compile files('libs/HxMBT.jar')
+    compile 'com.google.dagger:dagger:2.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    // -- Dagger 2 --
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.5'
+    compile 'com.google.dagger:dagger:2.5'
+    provided 'javax.annotation:jsr250-api:1.0'
+    // -- Others --
+    compile files('libs/ClientLib.jar')
+    compile files('libs/asper-4.9.0.jar')
+    compile files('libs/acra-4.5.0.jar')
+}
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+ 
+    <TextView
+        android:id="@+id/lblListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/sensorIcon"
+        android:layout_marginStart="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/lblListInfoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblListHeader"
+        android:layout_marginStart="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textSize="12sp"
+        android:text="@string/text_rssi" />
+    
+    <TextView
+        android:id="@+id/lblListInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/lblListInfoLabel"
+        android:layout_below="@+id/lblListHeader"
+        android:layout_marginStart="3dp"
+        android:textSize="12sp"
+        android:text="@string/text_default" />
+
+    <ImageView
+        android:id="@+id/sensorIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/desc"
+        android:src="@drawable/sensortag" />
+ 
+</RelativeLayout>

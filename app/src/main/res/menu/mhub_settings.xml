@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.pucrio.inf.lac.mhub.MHubStarter" >
+
+    <item
+        android:id="@+id/service_state"
+        android:orderInCategory="100"
+        android:title="@string/action_service_state"
+        android:icon="@drawable/ic_media_stop"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/clear_data"
+        android:orderInCategory="100"
+        android:title="@string/action_clear_data"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:showAsAction="ifRoom"/>
+
+</menu>
